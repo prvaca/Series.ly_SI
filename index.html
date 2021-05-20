@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="segundos;url=url destino"/>
+    <script src="formulario.js" type="text/javascript" lenguage="javascript"></script>
+    <title>Home</title>
+</head>
+<body>
+    <h1>Bienvenido a Series.ly</h1>
+    <p>by: Daniel Muñoz Moreno, Jorge Martín Luengo, Alejandro Marino, Paloma Rodríguez Vaca </p>
+
+    <form name="practicaFormulario" action="vengadores.html" method="POST" >
+
+        <label for="dni"> Número de dni:</label> <br>
+        <input type="number" id="dni" name="dni" maxlength="8" required> <br>
+
+        <label for="letter"> Letra:</label> <br>
+        <input type="text" id="letter" name="letter" maxlength="1" required> <br>
+           
+        <label for="nombre"> Introduzca su nombre:</label> <br>
+        <input type="text" id="nombre" name="nombre" maxlength="15" required> <br>
+
+        <label for="apellidos"> Introduzca su apellido:</label> <br>
+        <input type="text" id="apellidos" name="apellidos" maxlength="30" required> <br>
+
+        <label for="start">Fecha de nacimiento:</label><br>
+        <input type="date" id="start" name="trip-start" 
+        value="2021-02-18"
+        min="2000-01-01" max="2021-02-18" required> <br>
+
+        <label for="nacionalidad">Nacionalidad: </label><br>
+        <select name="nacionalidad" required> 
+            <option value="1">Española</option>
+            <option value="2">Suiza</option>
+            <option value="3">Alemána</option>
+            <option value="4">Ecuatoriana</option>
+            <option value="5">Nigeriano</option>
+            <option value="6">Italiano</option>
+        </select> <br>
+
+        <label for="email">Correo electrónico:</label><br>
+        <input type="email" id="email" required> <br>
+
+        <label for="pwd">Contraseña:</label> <br>
+        <input type="password" id="pwd" name="pwd" maxlength="10" required>  <br>
+
+        <label for="genero">Indíca tu género</label> <br>
+        <label for="hombre">Hombre</label>
+        <input type="radio" id="hombre" name="genero" value="hombre">
+        <label for="female">Female</label>
+        <input type="radio" id="mujer" name="genero" value="mujer">
+        <label for="other">Otro</label>
+        <input type="radio" id="otro" name="genero" value="otro"> <br>
+
+        <label for="newslatter">Recibir información en el correo:</label> <br>
+        <label for="si">Si</label>
+        <input type="checkbox" id="si" name="si" value="1"> 
+        <label for="no">No</label>
+        <input type="checkbox" id="no" name="no" value="2"> <br>
+        <div id="boton">
+            <input onclick="window.location.href = 'vengadores.html';" type="submit" value="Submit request" />
+        </div>
+        <input type="reset" value="Restaurar">
+
+    </form>
+</body>
+</html>
